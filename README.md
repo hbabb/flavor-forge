@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flavor Forge
 
-## Getting Started
+**Flavor Forge** is a modern, AI-powered recipe management web application designed for food enthusiasts. It helps users store, organize, and discover recipes, offering personalized suggestions based on available ingredients and taste preferences. Built with a sleek, responsive UI and tech-savvy features, Flavor Forge is perfect for those who love experimenting in the kitchen and sharing their culinary creations.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### MVP Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Personal Recipe Management**: Create, edit, delete, and categorize personal recipes.
+- **Search & Filters**: Full-text search and advanced filtering (e.g., cuisine, prep time, dietary restrictions).
+- **AI Integration**: Get recipe suggestions based on pantry/fridge contents and personal tastes.
+- **Authentication**: Secure user login with admin capabilities for user management.
+- **Mobile-First Design**: Fully responsive layout with light/dark mode.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Post-MVP Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **API Integrations**: Pull recipes from external sources.
+- **Social Sharing**: Share recipes via social media and email.
+- **Analytics Dashboard**: Track recipe popularity and user behavior.
+- **Data Export**: Export recipes as PDFs.
+- **Meal Planning & Grocery Lists**: Plan meals and generate shopping lists.
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Core Technologies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: [Next.js](https://nextjs.org/) with TypeScript
+- **UI Components**: ShadCN for core UI, MagicUI or AceternityUI for 3D effects
+- **Database**: Xata or Neon PostgreSQL, with MongoDB for specific use cases
+- **ORM**: Drizzle ORM (Prisma if needed)
+- **Form Handling**: Conform
+- **Validations**: Zod
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Supporting Tools
 
-## Deploy on Vercel
+- **Environment Variables Safety**: T3Env
+- **Authentication**: Clerk, Kinde, or Auth.js
+- **Server Actions**: next-safe-action
+- **Error Tracking**: Sentry
+- **Linting/Formatting**: Biome (with ESLint & Prettier if needed)
+- **Commit Linting**: Commitlint with custom Git Hooks
+- **Data Display**: Tanstack Table integrated with ShadCN tables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deployment Options
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Vercel
+- AWS
+- DigitalOcean
+- Heroku
+- Hostinger
+- Google Cloud Platform
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/flavor-forge.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd flavor-forge
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Set up environment variables in a `.env` file using [T3Env](https://t3-env.vercel.app/).
+5. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open the app in your browser at [http://localhost:3000](http://localhost:3000).
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -m "Add your feature description"
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Flavor Forge** - Crafting culinary experiences with technology!
